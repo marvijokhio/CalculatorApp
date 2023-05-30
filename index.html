@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+     <div class="case">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="display" readonly/></td>
+            </tr>
+            <tr>
+                <td><button class="operationsBtn" onclick="allClear()">AC</button></td>
+                <td><button class="operationsBtn" onclick="invertSign()">+/-</button></td>
+                <td><button class="operationsBtn" onclick="percent()">%</button></td>
+                <td><button class="operationsBtn" onclick="division()">&#247;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getNumber(7)">7</button></td>
+                <td><button onclick="getNumber(8)">8</button></td>
+                <td><button onclick="getNumber(9)">9</button></td>
+                <td><button class="operationsBtn" onclick="multiplication()">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getNumber(4)">4</button></td>
+                <td><button onclick="getNumber(5)">5</button></td>
+                <td><button onclick="getNumber(6)">6</button></td>
+                <td><button class="operationsBtn" onclick="subtraction()">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getNumber(1)">1</button></td>
+                <td><button onclick="getNumber(2)">2</button></td>
+                <td><button onclick="getNumber(3)">3</button></td>
+                <td><button class="operationsBtn" onclick="addition()">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="btnzero" onclick="getNumber(0)">0</button></td>
+                <td><button class="operationsBtn" onclick="theDot()">.</button></td>
+                <td><button class="operationsBtn" onclick="equals()">=</button></td>
+            </tr>
+        </table>
+
+     </div>
+    
+
+    <!--  
+        <h1>Calculator</h1>
+    <input type="text" id="display" />
+    <button onclick="GetInput('ac')">AC</button>
+    <button onclick="GetInput('-')">+/-</button>
+    <button onclick="GetInput('%')">%</button>
+    <button onclick="GetInput('div')">&#247;</button>
+    <button onclick="GetInput('multi')">*</button>
+    <button onclick="GetInput('add')">+</button>
+    <button onclick="GetInput('sub')">-</button>
+    <button onclick="GetInput('=')">=</button>
+    <button onclick="GetInput('.')">.</button>
+    <button onclick="numberValue(1)">1</button>
+    <button onclick="numberValue(2)">2</button>
+    <button onclick="numberValue(3)">3</button>
+    <button onclick="numberValue(4)">4</button>
+
+    -->
+    
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
